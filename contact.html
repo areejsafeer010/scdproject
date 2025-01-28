@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us - Medica</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Medica</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/social.png" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="contact-section">
+            <div class="contact-container">
+                <h1>Get in Touch</h1>
+                <p class="quote">"Your health, our priority."</p>
+                
+                <div class="contact-form-container">
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+
+                <p class="footer-quote">"Together, we heal better."</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Medica. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

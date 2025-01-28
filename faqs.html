@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faqs.css">
+    <title>FAQs - Medical Test Reporting System</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Medica</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/social.png" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <main>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <!-- Success Message (Initially hidden) -->
+        <div id="success-message" style="display: none; color: green; font-size: 16px; font-weight: bold; margin-bottom: 20px;">
+            FAQ added successfully!
+        </div>
+
+            <div class="faq-item">
+                <h3>1. What is Medica?</h3>
+                <p>Medica is a platform that provides accurate and timely medical test reporting to patients and healthcare providers, helping them access essential health information securely.</p>
+            </div>
+            <div class="faq-item">
+                <h3>2. How can I access my test results?</h3>
+                <p>You can access your test results by logging into the Patient Portal after registering with us.</p>
+            </div>
+            <div class="faq-item">
+                <h3>3. Is my personal information secure?</h3>
+                <p>Yes, we use advanced encryption methods to ensure your personal and medical data is kept secure and private at all times.</p>
+            </div>
+            <div class="faq-item">
+                <h3>4. How can I request an appointment for a test?</h3>
+                <p>You can request an appointment by visiting the 'Request Appointment' section in the 'Find Test' part of our website.</p>
+            </div>
+            <div class="faq-item">
+                <h3>5. What should I do if I have a complaint about the report?</h3>
+                <p>If you have a complaint, please contact us via the 'Feedback/Complaints' section on the homepage. We will address your concern promptly.</p>
+            </div>
+        <!-- Admin section to add new FAQ -->
+        <div id="admin-section">
+            <h3>Add a New FAQ</h3>
+            <input type="text" id="faq-question" placeholder="Enter the question">
+            <textarea id="faq-answer" placeholder="Enter the answer"></textarea>
+            <button id="add-faq">Add FAQ</button>
+        </div>
+            <!-- Add more FAQs as needed -->
+            <div class="faq-image">
+                <img src="images/flat-vector-frequently-asked-questions-faqs-concept-illustration_939213-401.avif" alt="FAQs Image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Medica. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

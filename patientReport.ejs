@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Patient Report</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Medica</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <main class="patient-report-container">
+        <div class="report-section">
+            <h2>Patient Report</h2>
+            <p><strong>Patient ID:</strong> <%= report.patient_id %></p>
+            <p><strong>Full Name:</strong> <%= report.full_name %></p>
+            <p><strong>Hospital Name:</strong> <%= report.hospital_name %></p>
+            <p><strong>Test Results:</strong> <%= report.test_results %></p>
+            <p><strong>Comments:</strong> <%= report.comments %></p>
+        </div>
+
+        <div class="action-section">
+            <h3>What would you like to do next?</h3>
+            <a href="/consult-doctor/<%= report.patient_id %>" class="action-button">Consult Doctor</a>
+            <a href="/payment/<%= report.patient_id %>" class="action-button">Make Payment</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medica. All rights reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
